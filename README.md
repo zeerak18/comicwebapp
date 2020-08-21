@@ -5,10 +5,3 @@
 Hosted on Herokuapp: http://comicwebapp.herokuapp.com/1
 
 
-Node.js 12.18.*
-
-```
-npm install
-npm run start
-npm run dev
-```
