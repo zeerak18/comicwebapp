@@ -1,0 +1,37 @@
+<h1 class="comic-title">
+    {{ comic.title }}
+</h1>
+
+<p class="comic-date">
+    Was created: {{ comic.month }} / {{ comic.year }}
+</p>
+
+<nav class="nav">
+    <ul class="nav__list">
+        <li class="nav__item">
+            {{#if comic.isFirst}}
+                <span class="nav__link nav__link_disabled">Prev</span>
+            {{ else }}
+                <a class="nav__link" href="/{{ comic.prevNum }}">< Prev</a>
+            {{/if}}
+        </li>
+        <li class="nav__item">
+            <a class="nav__link" href="{{ comic.randomNum }}">Random</a>
+        </li>
+        <li class="nav__item">
+            {{#if comic.isLast}}
+                <span class="nav__link nav__link_disabled">Next</span>
+            {{ else }}
+                <a class="nav__link" href="/{{ comic.nextNum }}">Next ></a>
+            {{/if}}
+        </li>
+    </ul>
+</nav>
+
+<div class="comic-img">
+    <img src="{{ comic.img }}" alt="{{ comic.alt }}">
+</div>
+
+<div class="comic-transcript">
+    {{ comic.transcript }}
+</div>

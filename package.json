@@ -1,0 +1,33 @@
+{
+  "name": "comic-strip",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "dev": "nodemon index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/zeerak18/comicwebapp.git"
+  },
+  "author": "Zeerak Siddiqui",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/zeerak18/comicwebapp/issues"
+  },
+  "homepage": "https://github.com/zeerak18/comicwebapp#readme",
+  "dependencies": {
+    "@handlebars/allow-prototype-access": "^1.0.3",
+    "express": "^4.17.1",
+    "express-handlebars": "^5.1.0",
+    "handlebars": "^4.7.6",
+    "node-fetch": "^2.6.0"
+  },
+  "engines": {
+    "node": "12.16.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.4"
+  }
+}
