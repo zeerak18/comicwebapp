@@ -1,3 +1,4 @@
+//require nodes node-fetch library for requests
 const fetch = require("node-fetch");
 
 class Comic {
@@ -29,7 +30,7 @@ class Comic {
         }
 
     }
-
+// for previous
     static getPrev(num) {
         if (num === 1) {
             return num;
@@ -38,6 +39,7 @@ class Comic {
         }
     }
 
+// for next
     static getNext(num, lastNum) {
         if (num === lastNum) {
             return num;
@@ -46,6 +48,7 @@ class Comic {
         }
     }
 
+// functionality to get random comic strip
     static getRandom(lastNum) {
         const min = Math.ceil(1);
         const max = Math.floor(lastNum);

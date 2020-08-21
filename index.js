@@ -25,6 +25,7 @@ app.use(express.urlencoded({ extended: true }));
 
 app.use('/', homeRoutes);
 
+//listend for port declared. in our case port 3000
 app.listen(PORT, () => {
     console.log(`Server is running on port ${PORT}`);
 });
